@@ -24,14 +24,12 @@ namespace DownMovies
         /// 下载目标
         /// </summary>
         public string Root { get; set; }
-        /// <summary>
-        /// 包含的电影信息
-        /// </summary>
-        public Dictionary<string,MoviesDownloadTaskInfo> Movies { get; set; }
+        public string DownloadUrl { get; set; }
+        
 
         public PageTask()
         {
-            Movies = new Dictionary<string, MoviesDownloadTaskInfo>(StringComparer.OrdinalIgnoreCase);
+
         }
 
         public PageTask(int id, string name, string url) : this()

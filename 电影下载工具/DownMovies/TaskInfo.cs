@@ -18,14 +18,14 @@ namespace DownMovies
         /// </summary>
         public Queue<PageTask> WaitForDownloadPageTasks { get; set; }
         /// <summary>
-        /// 电影保存的位置
+        /// 电影详细信息
         /// </summary>
         public Dictionary<string, MoviesDownloadTaskInfo> DownloadMovies { get; set; }
 
         /// <summary>
         /// 等待下载的电影页面
         /// </summary>
-        public Queue<MoviesDownloadTask> MoveDownloadTasks { get; set; }
+        public Queue<MoviesDownloadTask> MovieDownloadTasks { get; set; }
         /// <summary>
         /// 设置或获取是否完整下载
         /// </summary>
@@ -36,7 +36,7 @@ namespace DownMovies
             PageDownloaded=new Dictionary<string, PageTask>(StringComparer.OrdinalIgnoreCase);
             DownloadMovies=new Dictionary<string, MoviesDownloadTaskInfo>(StringComparer.OrdinalIgnoreCase);
             WaitForDownloadPageTasks=new Queue<PageTask>();
-            MoveDownloadTasks=new Queue<MoviesDownloadTask>();
+            MovieDownloadTasks=new Queue<MoviesDownloadTask>();
         }
     }
 }

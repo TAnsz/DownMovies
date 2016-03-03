@@ -6,7 +6,15 @@
     public class MoviesDownloadTask
     {
         /// <summary>
-        /// 电影地址
+        /// 说明
+        /// </summary>
+        public string Notice { get; set; }
+        /// <summary>
+        /// 图片地址
+        /// </summary>
+        public string Img { get; set; }
+        /// <summary>
+        /// 电影下载地址
         /// </summary>
          public string Url { get; set; }
         /// <summary>
